@@ -3,11 +3,197 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>СV</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Резюме - Северус Собака Намба Ван</title>
+    <link rel="icon" href="icon.png" type="image/png">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Базовые стили */
+        body {
+            font-family: 'Times New Roman', serif;
+            background-color: #0a0e17;
+            color: #e0e0e0;
+            line-height: 1.5;
+            margin: 0;
+            padding: 20px;
+        }
+
+        /* Основной контейнер */
+        .cv-container {
+            display: flex;
+            gap: 30px;
+            max-width: 1200px;
+            margin: 0 auto;
+            background-color: rgba(30, 30, 30, 0.9);
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
+        }
+
+        /* Колонки */
+        .left-column {
+            flex: 1;
+            min-width: 300px;
+            display: flex;
+            flex-direction: column;
+            gap: 25px;
+        }
+
+        .right-column {
+            flex: 2;
+            display: flex;
+            flex-direction: column;
+            gap: 25px;
+        }
+
+        /* Фото профиля */
+        .profile-photo {
+            width: 100%;
+            border-radius: 5px;
+            border: 3px solid #2a623d;
+            box-shadow: 0 0 15px rgba(42, 98, 61, 0.5);
+            transition: transform 0.3s;
+        }
+
+        .profile-photo:hover {
+            transform: scale(1.02);
+        }
+
+        /* Секции */
+        section {
+            background: rgba(26, 71, 42, 0.2);
+            padding: 20px;
+            border-radius: 5px;
+            border-left: 4px solid #2a623d;
+        }
+
+        h1, h2 {
+            color: #bdc3c7;
+            margin-top: 0;
+        }
+
+        h1 {
+            border-bottom: 2px solid #2a623d;
+            padding-bottom: 10px;
+            text-align: center;
+        }
+
+        h2 {
+            border-bottom: 1px solid #555;
+            padding-bottom: 5px;
+        }
+
+        ul {
+            padding-left: 20px;
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+
+        /* Контакты */
+        .contacts li {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        /* Адаптивность */
+        @media (max-width: 768px) {
+            .cv-container {
+                flex-direction: column;
+                padding: 15px;
+            }
+            
+            .left-column, .right-column {
+                min-width: auto;
+            }
+        }
+
+        /* Анимации */
+        @keyframes glow {
+            0%, 100% { box-shadow: 0 0 5px rgba(42, 98, 61, 0.5); }
+            50% { box-shadow: 0 0 20px rgba(42, 98, 61, 0.8); }
+        }
+
+    </style>
 </head>
 <body>
-    <h1>Приветствие</h1>
-    <p>ФИО.</p>
+    <div class="cv-container">
+        <!-- Левая колонка -->
+        <div class="left-column">
+            <header>
+            <!-- Фото -->
+            <div class="photo-container">
+                <img src="sev.jpg" alt="Фото Северуса" class="photo">
+                <h1>Северус Снейп</h1>
+            <p class="subtitle">Профессор зельеварения</p>
+            </div>
+            </header>
+
+            <!-- Контакты -->
+            <section class="contacts">
+                <h2>Контактная информация</h2>
+                <ul>
+                    <li>📧 owl@hogwarts.edu</li>
+                    <li>🏰 Хогвартс, Подземелья Слизерина</li>
+                    <li>📱 Сообщения через Патронуса</li>
+                    <li>🦉 Белая сова (для срочных писем)</li>
+                </ul>
+            </section>
+        </div>
+
+        <!-- Правая колонка -->
+        <div class="right-column">
+        
+            <!-- О себе -->
+            <section class="about">
+                <h2>О себе</h2>
+                <p>Профессор зельеварения с 15-летним стажем. Специализация: сложные оборотные зелья, окклюменция и легилименция. Магистр Тёмных искусств (официально - "Защита от Тёмных искусств").</p>
+                <p>Ключевые качества:</p>
+                <ul>
+                    <li>Беспристрастный аналитический ум</li>
+                    <li>Исключительные навыки невербальной магии</li>
+                    <li>Абсолютная преданность избранным целям</li>
+                    <li>Эксперт в маскировке мыслей и намерений</li>
+                </ul>
+            </section>
+
+            <!-- Образование -->
+            <section class="education">
+                <h2>Образование</h2>
+                <p><strong>Хогвартс, Школа Чародейства и Волшебства</strong></p>
+                <p>Факультет: Слизерин (1971-1978)</p>
+                <p>Награды:</p>
+                <ul>
+                    <li>Лучший ученик поколения</li>
+                    <li>Автор усовершенствованных рецептов зелий</li>
+                    <li>Чемпион по зельеварению (1975-1977)</li>
+                </ul>
+            </section>
+
+            <!-- Опыт работы -->
+            <section class="experience">
+                <h2>Опыт работы</h2>
+                <p><strong>Профессор зельеварения</strong></p>
+                <p>Хогвартс (1981-1997)</p>
+                <ul>
+                    <li>Преподавание курса зельеварения для 1-6 курсов</li>
+                    <li>Руководство факультетом Слизерин</li>
+                    <li>Разработка новых учебных программ</li>
+                </ul>
+            </section>
+        </div>
+    </div>
+    <footer class="sevka-footer">
+  <div class="footer-content">
+    <p>© 1997 Hogwarts School of Witchcraft and Wizardry</p>
+    <div class="footer-links">
+      <a href="#">Legilimency Policy</a>
+      <a href="#">Pensieve Terms</a>
+      <a href="#">Patronus GDPR</a>
+    </div>
+    <p class="footer-quote">"Always"</p>
+  </div>
+</footer>
 </body>
 </html>
