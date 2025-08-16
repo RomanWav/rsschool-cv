@@ -1,17 +1,15 @@
-
-/* Стили для фото */
 .photo-container {
     text-align: center;
     margin-bottom: 10px;
 }
 
 .photo {
-    width: 300px;          /* Размер фото */
-    height: 300px;         /* Квадратное */
-    border-radius: 30%;    /* Круглое фото */
-    object-fit: cover;     /* Чтобы изображение не искажалось */
-    border: 5px solid #abacac; /* Рамка */
-    box-shadow: 0 4px 8px rgb(0, 0, 0); /* Тень */
+    width: 300px;      
+    height: 300px;         
+    border-radius: 30%;    
+    object-fit: cover;     
+    border: 5px solid #abacac; 
+    box-shadow: 0 4px 8px rgb(0, 0, 0); 
     }
     
 body {
@@ -19,10 +17,10 @@ body {
     line-height: 1.6;
     color: #acc5f5;
     background-image: url('bg.jpg');
-    background-size: cover;       /* Растягивает изображение на весь экран */
-    background-position: center;  /* Центрирует изображение */
-    background-attachment: fixed; /* Фиксирует фон при прокрутке */
-    background-repeat: no-repeat; /* Отключает повторение изображения */
+    background-size: cover;       
+    background-position: center;  
+    background-attachment: fixed; 
+    background-repeat: no-repeat; 
     margin: 0;
     min-height: 100vh;
     margin: 0;
@@ -35,16 +33,16 @@ body {
     gap: 30px;
     max-width: 1200px;
     margin: 0 auto;
-    background: rgba(28, 43, 32, 0.8); /* Зеленоватый оттенок */
-  backdrop-filter: blur(3px); /* Размытие фона под контейнером */
-  border: 1px solid rgba(29, 53, 37, 0.3); /* Тонкая светящаяся рамка */
+    background: rgba(28, 43, 32, 0.8);
+  backdrop-filter: blur(3px); 
+  border: 1px solid rgba(29, 53, 37, 0.3); 
   box-shadow: 0 4px 100px rgba(0, 0, 0, 0.2);
     padding: 20px;
     box-shadow: 0 0 10px rgb(26, 8, 8);
 }
 
 .left-column {
-  flex: 1; /* Занимает 1 часть пространства */
+  flex: 1; 
   min-width: 300px;
   display: flex;
   flex-direction: column;
@@ -52,7 +50,7 @@ body {
 }
 
 .right-column {
-  flex: 2; /* Занимает 2 части пространства */
+  flex: 2; 
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -63,6 +61,14 @@ header {
     margin-bottom: 30px;
     border-bottom: 2px solid #000000;
     padding-bottom: 20px;
+}
+
+h1, h2, h3 {
+  font-family: 'Cinzel Decorative',
+    serif;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase; 
 }
 
 h1 {
@@ -107,7 +113,7 @@ section {
   padding: 20px;
   border-radius: 5px;
   border-left: 4px solid #2a623d;
-  transition: all 0.7s ease; /* Добавляем плавность */
+  transition: all 0.7s ease;
 }
 
 section:hover {
